@@ -168,6 +168,9 @@ App.Views.SelectImages = Backbone.View.extend({
 	},
 
 	showView: function(){
+		$('#second-image').hide()
+		$('#background-front').hide()
+		$('#background-front-left').hide()
 		$('#about-container').hide();
 		$('#contact-container').hide();
 		$('#add-images').show();
@@ -266,6 +269,8 @@ App.Views.ThumbsView = Backbone.View.extend({
  	},
 
  	showView: function(){
+ 		$('#background-front').hide()
+		$('#background-front-left').hide()
  		$('#about-container').hide();
  		$('#gallery-list').hide();
  		$('#gallery-container').hide();
@@ -353,6 +358,8 @@ App.Views.GalleryView = Backbone.View.extend({
 	},
 
 	showView:function(){
+		$('#background-front').hide()
+		$('#background-front-left').hide()
 		$('#container').hide();
 		$('#about-container').hide();
 		$('#contact-container').hide();
@@ -384,6 +391,8 @@ App.Views.Contact = Backbone.View.extend({
 	},
 
 	showView: function(){	
+		$('#background-front').hide()
+		$('#background-front-left').hide()
 		$('#container').hide();
 		$('#about-container').hide();
 		$('#gallery-list').hide();
@@ -411,6 +420,8 @@ App.Views.About = Backbone.View.extend({
 	},
 
 	showView: function(){
+		$('#background-front').hide()
+		$('#background-front-left').hide()
 		$('#container').hide();
 		$('#gallery-list').hide();
  		$('#gallery-container').hide();
