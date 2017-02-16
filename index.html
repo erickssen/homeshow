@@ -1,0 +1,248 @@
+<!Doctype html>
+<html lan="en" data-framework="backbonejs">
+<head>
+	<meta-charset="utf-8">
+	<title>Homeshow</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="3sjijdopgzy7e95">
+	</script>
+</head>
+	
+	<body>
+
+		  <div id="container"></div>
+		  <a id="link"></a>
+		 
+	<!-- top banner -->
+	<div id="background-img"></div>
+	<div id="top-banner">
+		<span id="logo">
+			<h3 class="company-logo"> <a href="#main" id="word-front">Front</a> </h3>
+			<h3 class="company-logo"> <a href="#main" id="word-page"> Page </a> </h3>
+			<h3 class="company-logo"> <a href="#main" id="word-homes">Homes</a> </h3> 
+		</span>
+
+		<ul id="menu-list">
+			<li class="menu"> <a href="#select"> DROPBOX </a></li>
+			<li class="menu"> <a href="mailto:erickssen@gmail.com"> E-MAIL </a></li>
+			<li class="menu"> <a href="#about"> ABOUT </a></li>
+			<li class="menu"> <a href="#gallery"> GALLERY </a></li>
+			<li class="menu"> <a href="#login"> LOGIN </a></li> 
+			<li class="menu"> <a href="#contact"> CONTACT </a></li> 
+	   </ul>
+
+		<div id="top-line">
+
+	<!-- top icons -->
+	<ul id="icons-list">
+		<span id="icons-container">
+			<a href="https://www.facebook.com/erick.oliva.750"><img src="icons/fb.ico" class="social-media-front"></a>
+			<a href="https://www.thumbtack.com"><img src="icons/th.png" class="social-media-front"></a>
+			<a href="https://www.smugmug.com/"><img src="icons/sm.png" class="social-media-front"></a>
+			<a href="https://www.youtube.com"><img src="icons/yt2.png" class="social-media-front"></a>
+		</span>
+	</ul>
+
+	</div> 
+	</div>
+
+
+ <!-- carousel -->
+
+<div id="carousel-container">
+
+   <div id="carousel"></div>
+   <div id="sidebar">
+   	<h3>Lorem ipsum dolor</h3>
+   	<p id="main-text">
+   	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+   	</p>
+   	<label id="side-btn"><a href="#about"> READ MORE </a></label>
+   </div>
+   <div id="image-overlay"></div>
+   <div id="second-image"></div>
+</div>
+
+	<div id="background-front"></div>
+	<div id="background-front-left"></div>
+
+ 	 <script id="carousel-template" type="text/template">
+		<div class="slide"> <%= ' <img src=" ' + image + ' "> ' %> </div>
+	</script>                            
+
+
+		<!-- loader button -->
+		<div id="add-images">
+			<input type="file" id="files" name="files[]" multiple/> 
+		</div>
+
+
+			<!-- control panel -->
+		 <div id="control-panel"></div>
+          
+
+         <script id="selection-template" type="text/template">
+			<div id="main-select">
+				<h1 id="load-header"> Load Images </h1>
+				<a href="#main"><button id="logout-btn">Log Out</button></a> 
+			</div>
+		  </script>    
+
+
+		<ul id="thumb-list"></ul>
+
+	    <script id="thumb-template" type="text/template">
+			<li class="thumb">  <%= thumb_image %>
+			<button class="thumb-btn">Delete</button>
+			</li>
+		</script> 
+
+
+
+		<!-- modal -->
+ <div id="modal-container"></div>
+	
+       <script id="modal-template" type="text/template">
+			<div id="modal-box">
+				<div id="inputbox-container">
+					<h id="modal-header">Login</h>
+					<input type = "text" id="email" class="inputbox" placeholder = "Enter Username"/>
+					<input type = "text" id="password" class="inputbox" placeholder = "Enter Password"/>
+				</div>
+				<div id="modal-footer">
+					<div id="submit">Submit</div>
+					<div id="cancel">Cancel</div>
+				</div>
+			</div>
+	   </script>    
+
+
+
+	   <!-- gallery -->
+	   <div id="gallery-container">
+	   		<div id="gallery-display"></div>
+	   </div> 
+	   <ul id="gallery-list"></ul>
+
+
+	   <!-- contact -->
+   <div id="contact-container"></div>
+
+<script id="contact-template" type="text/template">
+<div id="contact-box">
+<div id="contact-upper">
+	<h id="contact-header">LET US KNOW WHAT WE CAN DO FOR YOU</h>
+	</div>
+	<div id="middle-contact-box">
+	<span id="contact-left">
+	 
+ <div id="contact-icons">
+ <a href="http://www.facebook.com/"><img src="icons/fb.ico" class="social-media"></a>
+ <a href="https://www.thumbtack.com/"><img src="icons/th.png" class="social-media"></a>
+<a href="https://guillermoestalent.smugmug.com/"><img src="icons/sm.png" class="social-media"></a>
+<a href="https://www.youtube.com/"><img src="icons/yt2.png" class="social-media"></a>     
+  </div>	 
+</span>
+
+	<span id="contact-right">
+	<p class="contact-info">Front Page Homes LLC</p>
+	<p class="contact-info">
+	   1200 Brickell Avenue Suite #B179
+	   <br>
+	   Miami, Florida 33131
+	   <br>
+	   TEL: (305)206-6060
+	   <br>
+	   E-mail: <a href="mailto:erickssen@gmail.com.com">mail</a>
+	   <br>
+	   facebook: 
+	   <a href="https://www.facebook.com">facebook</a>
+    </p>   
+	</span>
+</div>
+</div>
+		<div id="contact-footer">
+			For all further inquiries kindly contact: Front Page Homes LLC 1200 Brickell Avenue Suite B179
+			Miami, Florida 33131
+		</div>
+	</div>
+</script> 
+
+         <!-- about -->
+<div id="about-container"></div>
+
+<script id="about-template" type="text/template">
+
+	<div id="about-box">
+		<div id="top-box">About Our Company</div>
+		<div id="color-box"></div>
+		  <div id="shade-box">
+		  <h3 id="bill-header">BILL BORGES</h3>
+		  <p>
+		  Lorem ipsum dolor sit amet labore et aliqua,<br> 
+		  consectetur adipiscing elit exercitation et dolore,<br> 
+		  sed do eiusmod tempor incididunt ut<br> 
+		  labore et dolore magna. 
+		  </p>
+		  </div>
+		  
+
+		  <div id="about-image">
+		  <img src="icons/bill.jpg">
+		  <div id="about-image-border"></div>
+
+		  </div>
+		<div id="shade-footer"></div>
+		</div>
+	   <div id="lower-box">
+		 <div id="middle-box">
+		 <h3>ABOUT FRONT PAGE HOMES</h3>
+	     <p>
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br> 
+	      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<br> 
+	      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in<br>
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br> 
+	      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<br> 
+	      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  
+		 </p>
+		 </div>
+		  	</div>
+		  	
+		  <div id="about-footer">
+		  	For all further inquiries kindly contact: Front Page Homes LLC 1200 Brickell Avenue Suite #B179
+			Miami, Florida 33131
+		  </div>
+	   
+	</div>
+</script>
+
+
+
+
+<script src="lib/jquery.js"></script>
+<script src="lib/underscore.js"></script>
+<script src="lib/backbone.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/backbonefire/0.5.1/backbonefire.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/models.js"></script>
+<script src="js/collections.js"></script>
+<script src="js/views.js"></script>
+<script src="js/routers.js"></script>
+
+
+
+
+	<script>
+		new App.Router;
+		Backbone.history.start(); 
+		App.photos = new App.Collections.Photos();
+		App.photos.fetch();
+		new App.Views.App({collection: App.photos});
+	</script>
+
+	</body>
+</html>
+
+
