@@ -128,6 +128,10 @@ App.Views.DisplayImage = Backbone.View.extend({
 		$('#carousel').show();
 		$('#sidebar').show();
 		$('.slide').show();
+		$('#second-image').show()
+		$('#background-front').show()
+		$('#background-front-left').show()
+		 
 	},
 
 
